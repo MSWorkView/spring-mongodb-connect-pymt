@@ -21,7 +21,7 @@ public class PaymentCreateUpdateRestController {
 	@PostMapping(path = "/payments", consumes = "application/json", produces = "application/json")
 	public List<Payment> createPayment(@RequestBody PymtRequest pymtRequest) {
 		
-		//repository.deleteAll();
+		repository.deleteAll();
 		List<Payment> pymts= pymtRequest.getPymts();
 		if(null!=pymts) {
 			List<Payment> pymtsResult= repository.saveAll(pymts);
