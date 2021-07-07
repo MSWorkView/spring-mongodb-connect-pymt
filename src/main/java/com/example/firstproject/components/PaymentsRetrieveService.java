@@ -9,8 +9,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.example.firstproject.repository.PaymentsRepo;
+import com.example.firstproject.requestdomain.RequestParams;
 import com.example.firstproject.domain.Payment;
-import com.example.firstproject.domain.RequestParams;
+
 
 @Service
 public class PaymentsRetrieveService {

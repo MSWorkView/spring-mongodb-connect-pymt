@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.firstproject.components.PaymentsRetrieveService;
 import com.example.firstproject.domain.Payment;
-import com.example.firstproject.domain.RequestParams;
+import com.example.firstproject.requestdomain.RequestParams;
+
 
 @RestController
 public class PaymentRetrieveRestController {

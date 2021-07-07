@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.firstproject.domain.Payment;
-import com.example.firstproject.domain.PymtRequest;
 import com.example.firstproject.repository.PaymentsRepo;
+import com.example.firstproject.requestdomain.PymtRequest;
 
 @RestController
 public class PaymentCreateUpdateRestController {
@@ -24,8 +24,7 @@ public class PaymentCreateUpdateRestController {
 		repository.deleteAll();
 		List<Payment> pymts= pymtRequest.getPymts();
 		if(null!=pymts) {
-			List<Payment> pymtsResult= repository.saveAll(pymts);
-			System.out.println(pymtsResult.size());
+			List<Payment> pymtsResult= repository.saveAll(pymts);			
 		}
 		
 
